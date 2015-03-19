@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>property</key>
+		<string>NONE</string>
+		<key>name</key>
+		<string>まったく吸わない</string>
+		<key>id</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>property</key>
+		<string>OPTION1</string>
+		<key>name</key>
+		<string>年に数本くらい</string>
+		<key>id</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>property</key>
+		<string>OPTION2</string>
+		<key>name</key>
+		<string>月に数本くらい</string>
+		<key>id</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>property</key>
+		<string>OPTION3</string>
+		<key>name</key>
+		<string>週に数本くらい</string>
+		<key>id</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>property</key>
+		<string>OPTION4</string>
+		<key>name</key>
+		<string>毎日吸う</string>
+		<key>id</key>
+		<string>4</string>
+	</dict>
+</array>
+</plist>

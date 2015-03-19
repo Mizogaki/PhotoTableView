@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>property</key>
+		<string>NONE</string>
+		<key>name</key>
+		<string>なし</string>
+		<key>id</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>property</key>
+		<string>IMPRESSION</string>
+		<key>name</key>
+		<string>年齢・写真の印象</string>
+		<key>id</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>property</key>
+		<string>RICHNESS</string>
+		<key>name</key>
+		<string>生活・経験の豊かさ</string>
+		<key>id</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>property</key>
+		<string>PERSONALITY</string>
+		<key>name</key>
+		<string>人柄・価値観</string>
+		<key>id</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>property</key>
+		<string>SERIOUSNESS</string>
+		<key>name</key>
+		<string>恋活の真剣度</string>
+		<key>id</key>
+		<string>4</string>
+	</dict>
+</array>
+</plist>

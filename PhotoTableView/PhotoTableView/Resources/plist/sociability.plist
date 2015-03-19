@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>property</key>
+		<string>LARGE</string>
+		<key>name</key>
+		<string>大人数が好き</string>
+		<key>id</key>
+		<string>0</string>
+	</dict>
+	<dict>
+		<key>property</key>
+		<string>SMALL</string>
+		<key>name</key>
+		<string>少人数が好き</string>
+		<key>id</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>property</key>
+		<string>SINGLE</string>
+		<key>name</key>
+		<string>一人が好き</string>
+		<key>id</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>property</key>
+		<string>SPEEDY</string>
+		<key>name</key>
+		<string>すぐに仲良くなる</string>
+		<key>id</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>property</key>
+		<string>SLOWLY</string>
+		<key>name</key>
+		<string>徐々に仲良くなる</string>
+		<key>id</key>
+		<string>4</string>
+	</dict>
+</array>
+</plist>
