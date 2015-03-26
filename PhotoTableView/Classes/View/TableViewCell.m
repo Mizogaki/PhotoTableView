@@ -18,8 +18,6 @@
 
 @interface TableViewCell()<UIScrollViewDelegate>
 
-
-
 @end
 
 @implementation TableViewCell
