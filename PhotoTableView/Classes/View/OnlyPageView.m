@@ -19,7 +19,6 @@
     UIImageView *imageView = [[UIImageView alloc]initWithFrame:imageFrame];
 	imageView.image = [UIImage imageNamed:imageName];
     [self addSubview:imageView];
-     
 	return self;
 }
 
