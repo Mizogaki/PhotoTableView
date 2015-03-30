@@ -27,54 +27,13 @@
 {
     self = [super initWithCoder:decoder];
     if (!self) {
+        self.cellFlag = NO;
         return nil;
     }
     
     return self;
 }
 
-#pragma mark - UIScrollViewDelegate
-
--(void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    
-    CGFloat pageWidth = self.pageScrollView.frame.size.width;
-    int pageNo = floor((self.pageScrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-    self.pageControl.currentPage = pageNo;
-}
-
-- (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)scrollView{
-    
-    return NO;
-}
-
-- (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView{
-    
-}
-
-- (void)prepareForReuse{
-    
-    [super prepareForReuse];
-}
-
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated{
-    
-    [super setSelected:selected animated:animated];
-}
-
-- (void)setHighlighted:(BOOL)highlighted animated:(BOOL)animated{
-    
-    [super setHighlighted:highlighted animated:animated];
-}
-
-- (void)setEditing:(BOOL)editing animated:(BOOL)animated{
-    
-    [super setEditing:editing animated:animated];
-}
-
-- (void)didTransitionToState:(UITableViewCellStateMask)state{
-    
-    [super didTransitionToState:state];
-}
 
 @end
 

@@ -15,10 +15,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *initialLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ageLable;
 @property (weak, nonatomic) IBOutlet UILabel *introductionLabel;
-@property (assign ,nonatomic) BOOL Flag;
+@property (assign,nonatomic) BOOL cellFlag;
 
-
-- (void)userProfileImageView:(NSMutableArray*)imageArray;
 
 
 @end

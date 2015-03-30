@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -35,7 +36,7 @@
                         <subviews>
                             <containerView multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFV-N3-CMx">
                                 <rect key="frame" x="0.0" y="-1" width="320" height="569"/>
-                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <connections>
                                     <segue destination="ex6-4q-6Jg" kind="embed" id="e9J-bO-x0W"/>
@@ -106,15 +107,57 @@
                                                     <rect key="frame" x="8" y="18" width="304" height="449"/>
                                                     <subviews>
                                                         <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srp-JD-dzK">
-                                                            <rect key="frame" x="1" y="1" width="302" height="349"/>
+                                                            <rect key="frame" x="10" y="10" width="284" height="340"/>
                                                         </scrollView>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brg-fk-Odi">
+                                                            <rect key="frame" x="196" y="358" width="48" height="30"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="48" id="F7M-P6-rB9"/>
+                                                                <constraint firstAttribute="height" constant="30" id="w2a-SO-h0B"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
+                                                            <color key="textColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dF-L6-q3Y">
+                                                            <rect key="frame" x="229" y="358" width="50" height="26"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="50" id="JDI-kO-Yt2"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNITY-CHAN!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH7-5w-k0s">
+                                                            <rect key="frame" x="35" y="357" width="162" height="32"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="32" id="Rpp-D0-j4l"/>
+                                                                <constraint firstAttribute="width" constant="162" id="T4h-KF-fNZ"/>
+                                                            </constraints>
+                                                            <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
+                                                            <color key="textColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Koment Koment Koment Koment " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNj-Mc-mUf">
+                                                            <rect key="frame" x="8" y="400" width="288" height="36"/>
+                                                            <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="11"/>
+                                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                                     <constraints>
-                                                        <constraint firstItem="Srp-JD-dzK" firstAttribute="leading" secondItem="nZd-zH-9ha" secondAttribute="leading" constant="1" id="SCk-9f-fas"/>
+                                                        <constraint firstAttribute="trailing" secondItem="5dF-L6-q3Y" secondAttribute="trailing" constant="25" id="81i-cW-CVk"/>
+                                                        <constraint firstAttribute="bottom" secondItem="5dF-L6-q3Y" secondAttribute="bottom" constant="65" id="9nf-4Z-2pw"/>
+                                                        <constraint firstItem="brg-fk-Odi" firstAttribute="centerY" secondItem="gH7-5w-k0s" secondAttribute="centerY" id="H6Q-EG-cOK"/>
+                                                        <constraint firstItem="Srp-JD-dzK" firstAttribute="leading" secondItem="nZd-zH-9ha" secondAttribute="leading" constant="10" id="SCk-9f-fas"/>
                                                         <constraint firstAttribute="bottom" secondItem="Srp-JD-dzK" secondAttribute="bottom" constant="99" id="cge-Js-i41"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Srp-JD-dzK" secondAttribute="trailing" constant="1" id="foH-pK-49S"/>
-                                                        <constraint firstItem="Srp-JD-dzK" firstAttribute="top" secondItem="nZd-zH-9ha" secondAttribute="top" constant="1" id="kGC-pg-VlE"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Srp-JD-dzK" secondAttribute="trailing" constant="10" id="foH-pK-49S"/>
+                                                        <constraint firstItem="brg-fk-Odi" firstAttribute="firstBaseline" secondItem="5dF-L6-q3Y" secondAttribute="firstBaseline" id="jFm-kO-y1o"/>
+                                                        <constraint firstItem="Srp-JD-dzK" firstAttribute="top" secondItem="nZd-zH-9ha" secondAttribute="top" constant="10" id="kGC-pg-VlE"/>
+                                                        <constraint firstAttribute="trailing" secondItem="brg-fk-Odi" secondAttribute="trailing" constant="60" id="mAA-0N-XFV"/>
+                                                        <constraint firstItem="5dF-L6-q3Y" firstAttribute="leading" secondItem="gH7-5w-k0s" secondAttribute="trailing" constant="32" id="mOC-1V-ERO"/>
+                                                        <constraint firstItem="brg-fk-Odi" firstAttribute="top" secondItem="Srp-JD-dzK" secondAttribute="bottom" constant="8" symbolic="YES" id="tHM-Cd-Owc"/>
                                                     </constraints>
                                                 </view>
                                             </subviews>
@@ -130,7 +173,6 @@
                                             <outlet property="ageLable" destination="brg-fk-Odi" id="rsy-5L-9v3"/>
                                             <outlet property="initialLabel" destination="gH7-5w-k0s" id="jkD-us-3TD"/>
                                             <outlet property="introductionLabel" destination="CNj-Mc-mUf" id="NOC-S8-0UO"/>
-                                            <outlet property="pageControl" destination="je6-0P-sjV" id="1mj-hc-8WV"/>
                                             <outlet property="pageScrollView" destination="Srp-JD-dzK" id="hq9-ku-xy7"/>
                                         </connections>
                                     </tableViewCell>
@@ -155,50 +197,8 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ey-M9-mvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" id="je6-0P-sjV">
-                    <rect key="frame" x="0.0" y="0.0" width="96" height="37"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="pageIndicatorTintColor" red="0.63239850379999996" green="0.62318091220000005" blue="0.6381743809" alpha="1" colorSpace="calibratedRGB"/>
-                    <color key="currentPageIndicatorTintColor" red="0.34426591979999999" green="0.1027777753" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                </pageControl>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Koment Koment Koment Koment Koment Koment Koment Koment Koment Koment Koment Koment Koment Koment Koment " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="CNj-Mc-mUf">
-                    <rect key="frame" x="0.0" y="0.0" width="288" height="61"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="11"/>
-                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dF-L6-q3Y">
-                    <rect key="frame" x="0.0" y="0.0" width="50" height="26"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="50" id="JDI-kO-Yt2"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
-                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="??" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brg-fk-Odi">
-                    <rect key="frame" x="0.0" y="0.0" width="48" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="48" id="F7M-P6-rB9"/>
-                        <constraint firstAttribute="height" constant="30" id="w2a-SO-h0B"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
-                    <color key="textColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
-                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UNITY-CHAN!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH7-5w-k0s">
-                    <rect key="frame" x="0.0" y="0.0" width="162" height="32"/>
-                    <constraints>
-                        <constraint firstAttribute="height" constant="32" id="Rpp-D0-j4l"/>
-                        <constraint firstAttribute="width" constant="162" id="T4h-KF-fNZ"/>
-                    </constraints>
-                    <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
-                    <color key="textColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
-                    <nil key="highlightedColor"/>
-                </label>
             </objects>
-            <point key="canvasLocation" x="-640" y="-859"/>
+            <point key="canvasLocation" x="-640" y="-834.5"/>
         </scene>
         <!--Change Sub View Controller-->
         <scene sceneID="3I8-Zg-k37">
@@ -209,7 +209,7 @@
                         <viewControllerLayoutGuide type="bottom" id="xp2-sC-o9F"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="r7b-ig-rvK">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="567"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" showsHorizontalScrollIndicator="NO" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="dm4-XL-PLu">
