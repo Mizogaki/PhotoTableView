@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="z6f-cD-hMs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="z6f-cD-hMs">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Navigation Controller-->
@@ -20,7 +22,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fwW-cu-hAx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1229" y="-545.99999999999989"/>
+            <point key="canvasLocation" x="-2304.375" y="-576.7605633802815"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ov9-Ce-maP">
@@ -31,27 +33,52 @@
                         <viewControllerLayoutGuide type="bottom" id="rMz-DH-A1d"/>
                     </layoutGuides>
                     <view key="view" multipleTouchEnabled="YES" contentMode="scaleToFill" id="YmM-bs-2xJ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <containerView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2B-z8-VRl">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <connections>
-                                    <segue destination="xvc-7M-fPp" kind="embed" id="xtd-2S-QEr"/>
-                                </connections>
-                            </containerView>
                             <containerView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eFV-N3-CMx">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <color key="backgroundColor" red="0.98039215690000003" green="0.98823529409999999" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="-5" y="0.0" width="405" height="800"/>
+                                </variation>
                                 <connections>
                                     <segue destination="ex6-4q-6Jg" kind="embed" id="e9J-bO-x0W"/>
                                 </connections>
                             </containerView>
+                            <containerView multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2B-z8-VRl">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="600"/>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="xvc-7M-fPp" kind="embed" id="xtd-2S-QEr"/>
+                                </connections>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="eFV-N3-CMx"/>
+                                <exclude reference="a2B-z8-VRl"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="a2B-z8-VRl"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="eFV-N3-CMx"/>
+                            </mask>
+                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="R7K-cl-ooC">
                         <barButtonItem key="leftBarButtonItem" image="ico_header_list01" id="RiY-lO-yIg">
@@ -68,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bEK-m0-4iw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-797" y="-545.99999999999989"/>
+            <point key="canvasLocation" x="-1425" y="-578"/>
         </scene>
         <!--Change Main View Controller-->
         <scene sceneID="Jla-4D-I22">
@@ -82,7 +109,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="487" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Bxx-ka-WL2">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="default" allowsMultipleSelection="YES" rowHeight="718" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Bxx-ka-WL2">
                                 <rect key="frame" x="0.0" y="60" width="320" height="550"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -90,7 +117,7 @@
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="ThumbnailTableCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="487" id="ncP-oj-hKj" customClass="TableViewCell">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="ThumbnailTableCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="TableViewCell" rowHeight="718" id="ncP-oj-hKj" customClass="TableViewCell">
                                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ncP-oj-hKj" id="fge-2f-tOr">
@@ -99,43 +126,137 @@
                                                 <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nZd-zH-9ha">
                                                     <rect key="frame" x="8" y="19" width="304" height="454"/>
                                                     <subviews>
-                                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srp-JD-dzK">
-                                                            <rect key="frame" x="0.0" y="0.0" width="304" height="345"/>
-                                                        </scrollView>
                                                         <pageControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="5" translatesAutoresizingMaskIntoConstraints="NO" id="je6-0P-sjV">
                                                             <rect key="frame" x="105" y="338" width="95" height="37"/>
                                                             <color key="pageIndicatorTintColor" red="0.63239850379999996" green="0.62318091220000005" blue="0.6381743809" alpha="1" colorSpace="calibratedRGB"/>
                                                             <color key="currentPageIndicatorTintColor" red="0.34426591979999999" green="0.1027777753" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="147" y="535" width="95" height="37"/>
+                                                            </variation>
                                                         </pageControl>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Koment Koment Koment Koment Koment Koment Koment Koment Koment Koment Koment Koment Koment Koment Koment " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CNj-Mc-mUf">
                                                             <rect key="frame" x="8" y="393" width="288" height="61"/>
                                                             <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="11"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="50" y="622" width="288" height="61"/>
+                                                            </variation>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="age" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5dF-L6-q3Y">
                                                             <rect key="frame" x="220" y="366" width="50" height="25"/>
                                                             <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
                                                             <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                                             <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="231" y="565" width="50" height="25"/>
+                                                            </variation>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="??" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="brg-fk-Odi">
                                                             <rect key="frame" x="192" y="364" width="47" height="30"/>
                                                             <fontDescription key="fontDescription" name="HiraKakuProN-W3" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
                                                             <color key="textColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="202" y="563" width="47" height="30"/>
+                                                            </variation>
                                                         </label>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UNITY-CHAN!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gH7-5w-k0s">
                                                             <rect key="frame" x="43" y="364" width="161" height="32"/>
                                                             <fontDescription key="fontDescription" name="HiraKakuProN-W6" family="Hiragino Kaku Gothic ProN" pointSize="17"/>
                                                             <color key="textColor" red="0.58039215690000001" green="0.58039215690000001" blue="0.58039215690000001" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="62" y="562" width="161" height="32"/>
+                                                            </variation>
                                                         </label>
+                                                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" bounces="NO" alwaysBounceHorizontal="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Srp-JD-dzK">
+                                                            <rect key="frame" x="0.0" y="0.0" width="304" height="345"/>
+                                                            <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                                                <rect key="frame" x="0.0" y="0.0" width="389" height="513"/>
+                                                            </variation>
+                                                        </scrollView>
                                                     </subviews>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="nZd-zH-9ha" secondAttribute="height" multiplier="389:691" id="NnT-bK-3ND"/>
+                                                        <constraint firstAttribute="width" secondItem="nZd-zH-9ha" secondAttribute="height" multiplier="389:691" id="Ydj-uU-WnK"/>
+                                                        <constraint firstAttribute="width" secondItem="nZd-zH-9ha" secondAttribute="height" multiplier="389:691" id="bef-Ez-lQg"/>
+                                                    </constraints>
+                                                    <variation key="default">
+                                                        <mask key="constraints">
+                                                            <exclude reference="NnT-bK-3ND"/>
+                                                            <exclude reference="Ydj-uU-WnK"/>
+                                                            <exclude reference="bef-Ez-lQg"/>
+                                                        </mask>
+                                                    </variation>
+                                                    <variation key="heightClass=regular-widthClass=compact" misplaced="YES">
+                                                        <rect key="frame" x="8" y="19" width="389" height="691"/>
+                                                        <mask key="constraints">
+                                                            <include reference="NnT-bK-3ND"/>
+                                                            <include reference="Ydj-uU-WnK"/>
+                                                            <include reference="bef-Ez-lQg"/>
+                                                        </mask>
+                                                    </variation>
                                                 </view>
                                             </subviews>
                                             <color key="backgroundColor" red="0.98039215690000003" green="0.98823529409999999" blue="0.68235294120000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstItem="nZd-zH-9ha" firstAttribute="leading" secondItem="fge-2f-tOr" secondAttribute="leadingMargin" id="3TS-vH-AEZ"/>
+                                                <constraint firstAttribute="centerX" secondItem="nZd-zH-9ha" secondAttribute="centerX" id="4qs-Yb-3mC"/>
+                                                <constraint firstAttribute="centerX" secondItem="nZd-zH-9ha" secondAttribute="centerX" id="5mD-g0-T2k"/>
+                                                <constraint firstItem="nZd-zH-9ha" firstAttribute="trailing" secondItem="fge-2f-tOr" secondAttribute="trailingMargin" id="78m-52-c4F"/>
+                                                <constraint firstAttribute="centerY" secondItem="nZd-zH-9ha" secondAttribute="centerY" id="CkR-Yi-QZR"/>
+                                                <constraint firstItem="nZd-zH-9ha" firstAttribute="top" secondItem="fge-2f-tOr" secondAttribute="topMargin" constant="11" id="PGA-UH-CKu"/>
+                                                <constraint firstAttribute="centerY" secondItem="nZd-zH-9ha" secondAttribute="centerY" id="YIH-3h-2wn"/>
+                                                <constraint firstItem="nZd-zH-9ha" firstAttribute="bottom" secondItem="fge-2f-tOr" secondAttribute="bottomMargin" id="aVE-R5-kiw"/>
+                                                <constraint firstItem="nZd-zH-9ha" firstAttribute="leading" secondItem="fge-2f-tOr" secondAttribute="leadingMargin" id="e5j-0a-Qnx"/>
+                                                <constraint firstAttribute="bottom" secondItem="nZd-zH-9ha" secondAttribute="bottom" constant="244.5" id="eDi-Oa-Hod"/>
+                                                <constraint firstItem="nZd-zH-9ha" firstAttribute="top" secondItem="fge-2f-tOr" secondAttribute="topMargin" constant="11" id="lJr-KR-mxT"/>
+                                                <constraint firstAttribute="centerY" secondItem="nZd-zH-9ha" secondAttribute="centerY" id="q2s-PA-o8c"/>
+                                                <constraint firstItem="nZd-zH-9ha" firstAttribute="trailing" secondItem="fge-2f-tOr" secondAttribute="trailingMargin" id="xfl-qY-p2w"/>
+                                                <constraint firstAttribute="centerX" secondItem="nZd-zH-9ha" secondAttribute="centerX" id="ykK-qG-cY1"/>
+                                            </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="3TS-vH-AEZ"/>
+                                                    <exclude reference="4qs-Yb-3mC"/>
+                                                    <exclude reference="5mD-g0-T2k"/>
+                                                    <exclude reference="78m-52-c4F"/>
+                                                    <exclude reference="CkR-Yi-QZR"/>
+                                                    <exclude reference="PGA-UH-CKu"/>
+                                                    <exclude reference="YIH-3h-2wn"/>
+                                                    <exclude reference="aVE-R5-kiw"/>
+                                                    <exclude reference="e5j-0a-Qnx"/>
+                                                    <exclude reference="eDi-Oa-Hod"/>
+                                                    <exclude reference="lJr-KR-mxT"/>
+                                                    <exclude reference="q2s-PA-o8c"/>
+                                                    <exclude reference="xfl-qY-p2w"/>
+                                                    <exclude reference="ykK-qG-cY1"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="78m-52-c4F"/>
+                                                    <include reference="e5j-0a-Qnx"/>
+                                                    <include reference="eDi-Oa-Hod"/>
+                                                    <include reference="lJr-KR-mxT"/>
+                                                </mask>
+                                            </variation>
+                                            <variation key="heightClass=regular-widthClass=compact">
+                                                <mask key="constraints">
+                                                    <include reference="3TS-vH-AEZ"/>
+                                                    <include reference="4qs-Yb-3mC"/>
+                                                    <include reference="5mD-g0-T2k"/>
+                                                    <exclude reference="CkR-Yi-QZR"/>
+                                                    <exclude reference="PGA-UH-CKu"/>
+                                                    <exclude reference="YIH-3h-2wn"/>
+                                                    <exclude reference="aVE-R5-kiw"/>
+                                                    <exclude reference="q2s-PA-o8c"/>
+                                                    <include reference="xfl-qY-p2w"/>
+                                                    <include reference="ykK-qG-cY1"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="ageLable" destination="brg-fk-Odi" id="rsy-5L-9v3"/>
@@ -146,6 +267,9 @@
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="60" width="405" height="745"/>
+                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="ex6-4q-6Jg" id="vV3-jT-NYq"/>
                                     <outlet property="delegate" destination="ex6-4q-6Jg" id="OXc-mT-m9L"/>
@@ -160,7 +284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3ey-M9-mvz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-359" y="-860.99999999999989"/>
+            <point key="canvasLocation" x="-674.25" y="-909.75"/>
         </scene>
         <!--Change Sub View Controller-->
         <scene sceneID="3I8-Zg-k37">
@@ -261,6 +385,9 @@
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
+                                </variation>
                                 <connections>
                                     <outlet property="dataSource" destination="xvc-7M-fPp" id="yqO-xN-8Sf"/>
                                     <outlet property="delegate" destination="xvc-7M-fPp" id="JbD-eL-qci"/>
@@ -275,7 +402,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eAf-vZ-2Cl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-359" y="-201"/>
+            <point key="canvasLocation" x="-615" y="-213"/>
         </scene>
     </scenes>
     <resources>
@@ -283,9 +410,4 @@
         <image name="ico_header_list01" width="30" height="30"/>
         <image name="top.png" width="446" height="693"/>
     </resources>
-    <simulatedMetricsContainer key="defaultSimulatedMetrics">
-        <simulatedStatusBarMetrics key="statusBar"/>
-        <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
-    </simulatedMetricsContainer>
 </document>
