@@ -112,7 +112,7 @@
 >>>>>>> Auto
                     </view>
                     <navigationItem key="navigationItem" id="R7K-cl-ooC">
-                        <barButtonItem key="leftBarButtonItem" image="ico_header_list01" id="RiY-lO-yIg">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="RiY-lO-yIg">
                             <color key="tintColor" red="0.90980392156862744" green="0.32941176470588235" blue="0.027450980392156862" alpha="1" colorSpace="calibratedRGB"/>
                             <connections>
                                 <action selector="changeContainerView:" destination="4ld-4K-A9J" id="Yfc-2L-SA8"/>
@@ -518,7 +518,6 @@
     </scenes>
     <resources>
         <image name="Untitled 17.png" width="285" height="349"/>
-        <image name="ico_header_list01" width="30" height="30"/>
         <image name="top.png" width="446" height="693"/>
     </resources>
 </document>
