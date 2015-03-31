@@ -72,8 +72,6 @@
                                               USER_DATA_INTRODUSTION:@"Sample Sample Sample",
                                               USER_DATA_IMAGES:imageArray,
                                               };
-    
-    customCell.pageControl.numberOfPages = imageArray.count;
     customCell.initialLabel.text = dummyUserDataDictionary[USER_DATA_INITIAL];
     customCell.ageLable.text = dummyUserDataDictionary[USER_DATA_AGE];
     customCell.introductionLabel.text = dummyUserDataDictionary[USER_DATA_INTRODUSTION];

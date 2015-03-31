@@ -11,7 +11,6 @@
 @interface TableViewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UIScrollView *pageScrollView;
-@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 @property (weak, nonatomic) IBOutlet UILabel *initialLabel;
 @property (weak, nonatomic) IBOutlet UILabel *ageLable;
 @property (weak, nonatomic) IBOutlet UILabel *introductionLabel;

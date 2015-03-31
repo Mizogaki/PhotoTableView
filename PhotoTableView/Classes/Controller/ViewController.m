@@ -26,7 +26,7 @@
     
     [super viewDidLoad];
 	
-	self.containerViewFlag = NO;
+	self.containerViewFlag = YES;
 }
 
 
