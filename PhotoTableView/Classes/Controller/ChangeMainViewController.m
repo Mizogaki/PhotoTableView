@@ -60,7 +60,7 @@
     
     UITableViewCell *cell = nil;
     
-    TableViewCell *customCell  = [self.onlyTableView dequeueReusableCellWithIdentifier:NSStringFromClass([TableViewCell class])];
+    TableViewCell *customCell = [self.onlyTableView dequeueReusableCellWithIdentifier:NSStringFromClass([TableViewCell class])];
     
     NSMutableArray *imageArray = [@[@"Untitled 18",@"Untitled 17",@"Untitled 18",
                                     @"Untitled 17",@"Untitled 18",@"Untitled 17",
