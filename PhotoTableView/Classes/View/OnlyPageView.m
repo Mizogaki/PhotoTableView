@@ -12,7 +12,7 @@
 
 @implementation OnlyPageView
 
- -(id)initWithImageName:(NSString *)imageName frame:(CGRect)pageFrame{
+ -(instancetype)initWithImageName:(NSString *)imageName frame:(CGRect)pageFrame{
      
 	self = [self initWithFrame:pageFrame];
 	CGRect imageFrame = CGRectMake(0, 0, pageFrame.size.width, pageFrame.size.height);

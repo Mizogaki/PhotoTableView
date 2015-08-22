@@ -10,6 +10,6 @@
 
 @interface OnlyPageView:UIView
 
--(id)initWithImageName:(NSString *)imageName frame:(CGRect)pageFrame;
+-(instancetype)initWithImageName:(NSString *)imageName frame:(CGRect)pageFrame;
 
 @end
