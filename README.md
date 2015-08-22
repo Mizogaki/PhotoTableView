@@ -18,6 +18,14 @@ iOS8にも対応させています。
 
 MIT
 
+## Unity-chan
+
+<div><img src="http://unity-chan.com/images/imageLicenseLogo.png" alt="ユニティちゃんライセンス"><p>  
+このアセットは、『<a href="http://unity-chan.com/contents/license_jp/" target="_blank">ユニティちゃんライセンス</a>』で提供されています。<p>
+
+このアセットをご利用される場合は、  
+『<a href="http://unity-chan.com/contents/guideline/" target="_blank">キャラクター利用のガイドライン</a>』も併せてご確認ください。</p></div>
+
 ## Author
 
 [MizogakiMasahito](https://github.com/MMasahito)
