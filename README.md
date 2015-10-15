@@ -1,3 +1,12 @@
+[![Platform](http://img.shields.io/badge/platform-ios-blue.svg?style=flat
+)](https://developer.apple.com/iphone/index.action)
+[![Language](http://img.shields.io/badge/language-Objective–C-brightgreen.svg?style=flat
+)](https://developer.apple.com/jp/documentation/)
+[![License](http://img.shields.io/badge/license-MIT-lightgrey.svg?style=flat
+)](http://mit-license.org)
+[![Issues](https://img.shields.io/github/issues/MMasahito/MotionGraph.svg?style=flat
+)](https://github.com/MMasahito/MotionGraph/issues?state=open)
+
 # PhotoTableView
 To be displayed in the TableView to make a custom cell using Xib
 I is written comment in Japanese in the Code 
